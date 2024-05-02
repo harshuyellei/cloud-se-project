@@ -1,0 +1,30 @@
+/* inventoryPage.css */
+.inventory-page {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .inventory-page h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* inventoryPage.css */
+.unselect-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .unselect-button:hover {
+    background-color: #c82333;
+  }
+  
