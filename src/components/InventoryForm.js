@@ -39,7 +39,7 @@ function InventoryForm({ item, onUpdateList, clearItem }) {
         body = formData;
     }
 
-    const url = item ? `http://localhost:5000/api/inventory/${item._id}` : 'http://localhost:5000/api/inventory';
+    const url = item ? `http://ec2-34-207-208-240.compute-1.amazonaws.com:5000/api/inventory/${item._id}` : 'http://ec2-34-207-208-240.compute-1.amazonaws.com:5000/api/inventory';
     const method = item ? 'PUT' : 'POST';
 
     const response = await fetch(url, {

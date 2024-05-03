@@ -28,7 +28,7 @@ const AdditionPage = () => {
 
     try {
       // Send request to backend
-      const response = await fetch(' http://localhost:5000/api/addition', {
+      const response = await fetch(' http://ec2-34-207-208-240.compute-1.amazonaws.com:5000/api/addition', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -64,7 +64,7 @@ const SignUp = () => {
 
         // If no errors, submit the form
         try {
-            const response = await fetch("http://localhost:5000/api/user/signup", {
+            const response = await fetch("http://ec2-34-207-208-240.compute-1.amazonaws.com:5000/api/user/signup", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",

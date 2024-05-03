@@ -17,7 +17,7 @@ class InventoryPage extends React.Component {
   }
 
   fetchItems = async () => {
-    const response = await fetch('http://localhost:5000/api/inventory');
+    const response = await fetch('http://ec2-34-207-208-240.compute-1.amazonaws.com:5000/api/inventory');
     const items = await response.json();
     this.setState({ items });
   };
@@ -42,7 +42,7 @@ class InventoryPage extends React.Component {
   handleDeleteItem = async (item) => {
     const confirmDelete = window.confirm("Are you sure you want to delete this item?");
     if (confirmDelete) {
-      const url = `http://localhost:5000/api/inventory/${item._id}`;
+      const url = `http://ec2-34-207-208-240.compute-1.amazonaws.com:5000/api/inventory/${item._id}`;
       const response = await fetch(url, { method: 'DELETE' });
       if (response.ok) { // Only update state if the server responds with a success status
         const updatedItems = this.state.items.filter(i => i._id !== item._id);

@@ -31,7 +31,7 @@ Start the development server:
     Access the application in your browser at http://localhost:3000.
 
 Deployment
-    The application has been deployed to an AWS EC2 instance for public access. You can visit the deployed website at http://example.com.
+    The application has been deployed to an AWS EC2 instance for public access. You can visit the deployed website at http://ec2-34-207-208-240.compute-1.amazonaws.com:3000.
 
 Author
     John Doe
