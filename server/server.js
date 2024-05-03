@@ -14,6 +14,11 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
+// Route to test server
+app.get("/api/test", (req, res) => {
+    res.json({ message: "Hello World" });
+});
+
 // Route to handle addition operation
 app.post("/api/addition", (req, res) => {
     const { num1, num2 } = req.body;
